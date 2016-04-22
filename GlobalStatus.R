@@ -1,6 +1,6 @@
 #Plots the global temperaturedevelopment of the current year and a prognosis for the rest of the year based on the assumption that historic 
-developments of global temperature describes the possible outcomes of this year. The plot is a bit strange since whats plotted in month 1 is january data, 
-month two is average of january and february, month three january, february, and march data ending in month 12 with yearly averages.
+#developments of global temperature describes the possible outcomes of this year. The plot is a bit strange since whats plotted in month 1 is january data, 
+#month two is average of january and february, month three january, february, and march data ending in month 12 with yearly averages.
 
 GStatus <- function(Y=2016,M=3){ #Use Y for the year of yor analysis, and M for the month of interrest
   GData <- read.csv("http://data.giss.nasa.gov/gistemp/tabledata_v3/GLB.Ts+dSST.csv",na.strings = c("***","****"),colClasses = "numeric")
